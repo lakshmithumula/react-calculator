@@ -1,0 +1,84 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Center calculator on screen */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Calculator container */
+.calculator {
+  background: #1e1e2f;
+  padding: 20px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Display screen */
+.display {
+  width: 100%;
+  height: 60px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  text-align: right;
+  padding: 10px;
+  background: #0f0f1a;
+  color: #fff;
+}
+
+/* Buttons grid */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Button style */
+button {
+  height: 55px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #2d2d44;
+  color: white;
+  transition: all 0.2s ease;
+}
+
+/* Hover effect */
+button:hover {
+  background: #404065;
+  transform: translateY(-2px);
+}
+
+/* Active click */
+button:active {
+  transform: scale(0.95);
+}
+
+/* Special buttons */
+button:nth-child(1) {
+  background: #ff4d4d;
+}
+
+button:nth-child(4),
+button:nth-child(8) {
+  background: #ff9f43;
+}
+
+button:last-child {
+  background: #1dd1a1;
+}
